@@ -1,0 +1,7 @@
+black>=24.0.0          # Automatic code formatter for clean, consistent Python code
+flake8>=6.0.0          # Linter to detect stylistic and programming errors
+mypy>=1.8              # Static type checker (optional but great if you use type hints)
+pytest>=8.0            # Lightweight testing framework for unit testing your implementations
+ipykernel>=6.29        # Jupyter kernel backend, lets you run notebooks inside JupyterLab
+nbstripout>=0.6        # Automatically strip output cells from notebooks before committing
+pre-commit>=3.6        # Manage Git hooks like auto-formatting or linting before commit
