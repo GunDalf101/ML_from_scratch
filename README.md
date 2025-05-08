@@ -22,8 +22,8 @@ This project is designed to help developers and students understand how popular 
 ## 🔧 Installation
 
 ```bash
-git clone https://github.com/yourusername/ml-from-scratch.git
-cd ml-from-scratch
+git clone https://github.com/GunDalf101/ML_from_scratch.git
+cd ML_from_scratch
 pip install -r requirements.txt
 ```
 
