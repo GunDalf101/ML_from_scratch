@@ -42,20 +42,16 @@ class LinearRegression:
         """
         n_samples, n_features = X.shape
         
-        # Initialize parameters
         self.weights = np.zeros(n_features)
         self.bias = 0
         
         # Gradient descent
         for _ in range(self.n_iterations):
-            # Forward pass
             y_pred = np.dot(X, self.weights) + self.bias
             
-            # Compute gradients
             dw = (1/n_samples) * np.dot(X.T, (y_pred - y))
             db = (1/n_samples) * np.sum(y_pred - y)
-            
-            # Update parameters
+
             self.weights -= self.learning_rate * dw
             self.bias -= self.learning_rate * db
     
