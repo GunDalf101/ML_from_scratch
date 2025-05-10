@@ -11,7 +11,7 @@ This project is designed to help developers and students understand how popular 
 | Linear Regression       | Supervised (regression)        | ✅ Done | [Linear Regression](./linear_regression) |
 | Logistic Regression     | Supervised (classification)    | ✅ Done | [Logistic Regression](./logistic_regression) |
 | K-Nearest Neighbors     | Supervised (classification)    | ✅ Done | [KNN](./knn) |
-| Naive Bayes             | Supervised (classification)    | 📝 Planned | [Naive Bayes](./naive_bayes) |
+| Naive Bayes             | Supervised (classification)    | ✅ Done  | [Naive Bayes](./naive_bayes) |
 | Decision Tree           | Supervised (classification)    | 📝 Planned | [Decision Tree](./decision_tree) |
 | Support Vector Machine  | Supervised (classification)    | 📝 Planned | [SVM](./svm) |
 | Principal Component Analysis | Unsupervised (dim. reduction) | 📝 Planned | [PCA](./pca) |
