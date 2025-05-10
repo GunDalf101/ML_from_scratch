@@ -9,7 +9,7 @@ This project is designed to help developers and students understand how popular 
 | Algorithm               | Type                           | Status | Link |
 |-------------------------|--------------------------------|--------|------|
 | Linear Regression       | Supervised (regression)        | ✅ Done | [Linear Regression](./linear_regression) |
-| Logistic Regression     | Supervised (classification)    | 🔄 In Progress | [Logistic Regression](./logistic_regression) |
+| Logistic Regression     | Supervised (classification)    | ✅ Done | [Logistic Regression](./logistic_regression) |
 | K-Nearest Neighbors     | Supervised (classification)    | ✅ Done | [KNN](./knn) |
 | Naive Bayes             | Supervised (classification)    | 📝 Planned | [Naive Bayes](./naive_bayes) |
 | Decision Tree           | Supervised (classification)    | 📝 Planned | [Decision Tree](./decision_tree) |
