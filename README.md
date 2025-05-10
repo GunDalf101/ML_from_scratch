@@ -16,7 +16,7 @@ This project is designed to help developers and students understand how popular 
 | Support Vector Machine  | Supervised (classification)    | 📝 Planned | [SVM](./svm) |
 | Principal Component Analysis | Unsupervised (dim. reduction) | 📝 Planned | [PCA](./pca) |
 | K-Means Clustering      | Unsupervised (clustering)      | 📝 Planned | [K-Means](./kmeans) |
-| Perceptron              | Supervised (NN binary)         | 📝 Planned | [Perceptron](./perceptron) |
+| Perceptron              | Supervised (NN binary)         | ✅ Done | [Perceptron](./perceptron) |
 | Neural Network (MLP)    | Supervised (NN multi-class)    | 📝 Planned | [Neural Network](./neural_network) |
 
 ## 🔧 Installation
