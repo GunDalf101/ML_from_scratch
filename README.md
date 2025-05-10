@@ -29,7 +29,8 @@ pip install -r requirements.txt
 
 Requirements include:
 - numpy
-- matplotlib
+- matplotlib (for demos)
+- seaborn (for demos)
 - pandas (for demos)
 - jupyterlab (for demos)
 - scikit-learn (only for comparing results — not used in implementations)
@@ -58,10 +59,6 @@ jupyter notebook demo.ipynb
 
 *Add some images/gifs of decision boundaries, PCA projections, etc.*
 
-## 📄 License
-
-MIT
-
 ## ✍️ Author
 
-Made with ☕ and curiosity by GunDalf
+Made with magic and curiosity by GunDalf
