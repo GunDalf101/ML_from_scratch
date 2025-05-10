@@ -1,37 +1,108 @@
-# Logistic Regression from Scratch
+# Logistic Regression
 
-This repository contains a simple implementation of Logistic Regression from scratch using NumPy. Logistic Regression is a classification algorithm used to predict binary outcomes (0 or 1) based on input features.
+## Theory
 
-## Features
+Logistic Regression is a statistical model used for binary classification that predicts the probability of an event occurring. Despite its name, it's a classification algorithm that uses the sigmoid function to transform linear predictions into probabilities.
 
-- Sigmoid activation function
-- Gradient descent optimization
-- Binary classification with customizable threshold
-- Probability predictions
-- Simple and intuitive API
+### How It Works
 
-## Installation
+1. **Model Structure**
+   - Linear combination of features: z = wᵀx + b
+   - Sigmoid activation: σ(z) = 1 / (1 + e^(-z))
+   - Decision boundary: y = 1 if σ(z) ≥ 0.5, else y = 0
 
-No additional installation is required beyond NumPy, which is used for numerical computations.
+2. **Training Process**
+   - Uses gradient descent to minimize binary cross-entropy loss
+   - Updates weights and bias iteratively
+   - Converges to optimal decision boundary
 
-```bash
-pip install numpy
+### Loss Function
+
+Binary Cross-Entropy Loss:
+```
+L(y, ŷ) = -[y * log(ŷ) + (1-y) * log(1-ŷ)]
 ```
 
-## Usage
+### Gradient Descent
 
-Here's a simple example of how to use the LogisticRegression class:
+Weight updates:
+```
+w = w - α * (1/m) * X^T * (ŷ - y)
+b = b - α * (1/m) * sum(ŷ - y)
+```
+
+## When to Use
+
+- **Use Logistic Regression when**:
+  - You need a simple, interpretable model
+  - Data is linearly separable
+  - You want probability estimates
+  - Training time is important
+  - Memory usage should be minimal
+
+- **Consider alternatives when**:
+  - Data is highly non-linear
+  - You need multi-class classification
+  - Features are highly correlated
+  - You need complex decision boundaries
+
+## Advantages
+
+1. Simple to understand and implement
+2. Provides probability estimates
+3. Fast training and prediction
+4. Works well with high-dimensional data
+5. Less prone to overfitting
+6. Memory efficient
+
+## Limitations
+
+1. Assumes linear decision boundary
+2. Sensitive to outliers
+3. Requires feature scaling
+4. May underfit complex data
+5. Binary classification only (without modifications)
+
+## Applications
+
+1. Medical diagnosis
+2. Credit scoring
+3. Spam detection
+4. Customer churn prediction
+5. Fraud detection
+
+## Best Practices
+
+1. Always scale features
+2. Handle class imbalance
+3. Regularize to prevent overfitting
+4. Use appropriate learning rate
+5. Monitor convergence
+6. Validate model assumptions
+
+## Time and Space Complexity
+
+- **Training**: O(n * d * i) time, O(d) space
+- **Prediction**: O(d) time, O(1) space
+- Where:
+  - n = number of samples
+  - d = number of features
+  - i = number of iterations
+
+## Implementation Details
 
 ```python
 from logistic_regression import LogisticRegression
 import numpy as np
 
-# Create sample data
-X = np.array([[1, 2], [2, 3], [3, 4], [4, 5]])
-y = np.array([0, 0, 1, 1])
+# Initialize model
+model = LogisticRegression(
+    learning_rate=0.01,  # Step size for gradient descent
+    n_iterations=1000,   # Number of training iterations
+    threshold=0.5        # Decision boundary threshold
+)
 
-# Initialize and train the model
-model = LogisticRegression(learning_rate=0.01, n_iterations=1000)
+# Train model
 model.fit(X, y)
 
 # Make predictions
@@ -41,9 +112,9 @@ probabilities = model.predict_proba(X)
 
 ## Parameters
 
-- `learning_rate` (float, default=0.01): The step size used in gradient descent
+- `learning_rate` (float, default=0.01): Step size for gradient descent
 - `n_iterations` (int, default=1000): Number of training iterations
-- `threshold` (float, default=0.5): Decision boundary threshold for classification
+- `threshold` (float, default=0.5): Decision boundary threshold
 
 ## Methods
 
@@ -51,34 +122,6 @@ probabilities = model.predict_proba(X)
 - `predict(X)`: Predict class labels (0 or 1)
 - `predict_proba(X)`: Predict probability scores
 - `decision_boundary(prob)`: Convert probability to class label
-
-## Example
-
-```python
-# Create a more complex example
-X = np.array([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]])
-y = np.array([0, 0, 1, 1, 1])
-
-# Initialize model with custom parameters
-model = LogisticRegression(learning_rate=0.01, n_iterations=2000, threshold=0.5)
-
-# Train the model
-model.fit(X, y)
-
-# Get predictions and probabilities
-predictions = model.predict(X)
-probabilities = model.predict_proba(X)
-
-print("Predictions:", predictions)
-print("Probabilities:", probabilities)
-```
-
-## How It Works
-
-1. The model uses the sigmoid function to convert linear predictions into probabilities
-2. Gradient descent is used to optimize the weights and bias
-3. The decision boundary (default 0.5) determines the final classification
-4. The model can be used for binary classification tasks
 
 ## License
 
