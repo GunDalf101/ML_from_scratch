@@ -13,7 +13,7 @@ This project is designed to help developers and students understand how popular 
 | K-Nearest Neighbors     | Supervised (classification)    | ✅ Done | [KNN](./knn) |
 | Naive Bayes             | Supervised (classification)    | ✅ Done  | [Naive Bayes](./naive_bayes) |
 | Decision Tree           | Supervised (classification)    | ✅ Done | [Decision Tree](./decision_tree) |
-| Support Vector Machine  | Supervised (classification)    | 📝 Planned | [SVM](./svm) |
+| Support Vector Machine  | Supervised (classification)    | ✅ Done | [SVM](./svm) |
 | Principal Component Analysis | Unsupervised (dim. reduction) | 📝 Planned | [PCA](./pca) |
 | K-Means Clustering      | Unsupervised (clustering)      | ✅ Done| [K-Means](./kmeans) |
 | Perceptron              | Supervised (NN binary)         | ✅ Done | [Perceptron](./perceptron) |
