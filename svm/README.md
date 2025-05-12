@@ -26,9 +26,7 @@ $$
 $$
 
 Subject to:
-$$
-y_i(w^T x_i + b) \geq 1 - \xi_i, \quad \xi_i \geq 0
-$$
+$$y_i(w^T x_i + b) \geq 1 - \xi_i, \quad \xi_i \geq 0$$
 
 Where:
 - $w$ is the weight vector
@@ -46,9 +44,7 @@ $$
 $$
 
 Subject to:
-$$
-0 \leq \alpha_i \leq C, \quad \sum_{i=1}^n \alpha_i y_i = 0
-$$
+$$0 \leq \alpha_i \leq C, \quad \sum_{i=1}^n \alpha_i y_i = 0$$
 
 Where:
 - $\alpha_i$ are Lagrange multipliers
