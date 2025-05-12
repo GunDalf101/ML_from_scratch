@@ -1,60 +1,50 @@
-# K-means Clustering Implementation
-
-## Overview
-K-means is an unsupervised learning algorithm that partitions a dataset into K distinct, non-overlapping clusters. It's one of the most popular clustering algorithms due to its simplicity and efficiency.
+# K-means Clustering
 
 ## Theory
 
-### Basic Concepts
-- **Cluster**: A group of data points that are similar to each other
-- **Centroid**: The center point of a cluster
-- **K**: Number of clusters to form
-- **Distance Metric**: Usually Euclidean distance
+K-means is an unsupervised learning algorithm that partitions a dataset into $K$ distinct, non-overlapping clusters. It's one of the most popular clustering algorithms due to its simplicity and efficiency.
+
+### How It Works
+
+1. **Model Structure**
+   - Each cluster is represented by a centroid (mean of points in the cluster)
+   - Each data point is assigned to the nearest centroid
+
+2. **Training Process**
+   - Initialize $K$ centroids randomly
+   - Assign each point to the nearest centroid
+   - Update centroids as the mean of assigned points
+   - Repeat assignment and update steps until convergence
 
 ### Mathematical Foundation
 
 #### Objective Function
 K-means minimizes the within-cluster sum of squares (WCSS):
 
-\[
+$$
 J = \sum_{i=1}^{k} \sum_{x \in C_i} \|x - \mu_i\|^2
-\]
+$$
 
 Where:
-- \(k\) is the number of clusters
-- \(C_i\) is the set of points in cluster i
-- \(\mu_i\) is the centroid of cluster i
-- \(\|x - \mu_i\|^2\) is the squared Euclidean distance
+- $k$ is the number of clusters
+- $C_i$ is the set of points in cluster $i$
+- $\mu_i$ is the centroid of cluster $i$
+- $\|x - \mu_i\|^2$ is the squared Euclidean distance
 
-#### Algorithm Steps
-1. Initialize K centroids randomly
-2. Assign each point to nearest centroid
-3. Update centroids as mean of assigned points
-4. Repeat steps 2-3 until convergence
+## When to Use
 
-## Implementation Details
+- **Use K-means when**:
+  - You want to partition data into $K$ groups
+  - Data is continuous and clusters are roughly spherical
+  - You need a fast, scalable algorithm
 
-### Key Components
-1. **Centroid Initialization**
-   - Random initialization
-   - K-means++ initialization (optional)
-
-2. **Cluster Assignment**
-   - Compute distances to all centroids
-   - Assign to nearest centroid
-
-3. **Centroid Update**
-   - Calculate mean of points in each cluster
-   - Update centroid positions
-
-### Methods
-- `fit(X)`: Train the model
-- `predict(X)`: Assign clusters to new data
-- `_initialize_centroids(X)`: Initialize cluster centers
-- `_compute_distances(X)`: Calculate point-to-centroid distances
-- `_update_centroids(X, labels)`: Update cluster centers
+- **Consider alternatives when**:
+  - Clusters are non-globular or vary in size/density
+  - You don't know the optimal number of clusters
+  - Data contains many outliers
 
 ## Advantages
+
 1. Simple and easy to implement
 2. Scales well to large datasets
 3. Guarantees convergence
@@ -62,6 +52,7 @@ Where:
 5. Fast and efficient
 
 ## Limitations
+
 1. Requires specifying number of clusters
 2. Sensitive to initial centroid positions
 3. Assumes spherical clusters
@@ -69,6 +60,7 @@ Where:
 5. Not suitable for non-globular clusters
 
 ## Applications
+
 1. Customer segmentation
 2. Image compression
 3. Document clustering
@@ -76,23 +68,25 @@ Where:
 5. Data preprocessing
 
 ## Best Practices
+
 1. Scale features before clustering
 2. Use K-means++ initialization
 3. Run multiple times with different seeds
-4. Use elbow method to choose K
+4. Use elbow method to choose $K$
 5. Handle outliers appropriately
 
-## Complexity Analysis
-- Time Complexity: O(n * k * i * d)
-- Space Complexity: O(n * k)
+## Time and Space Complexity
 
-Where:
-- n = number of samples
-- k = number of clusters
-- i = number of iterations
-- d = number of features
+- **Training**: $O(n \cdot k \cdot i \cdot d)$
+- **Space**: $O(n \cdot k)$
+- Where:
+  - $n$ = number of samples
+  - $k$ = number of clusters
+  - $i$ = number of iterations
+  - $d$ = number of features
 
-## Usage Example
+## Implementation Details
+
 ```python
 from kmeans import KMeans
 
@@ -104,6 +98,21 @@ kmeans.fit(X)
 labels = kmeans.predict(X)
 ```
 
-## Dependencies
-- NumPy
-- scikit-learn (for demo and testing)
+## Parameters
+
+- `n_clusters` (int): Number of clusters
+- `max_iter` (int): Maximum number of iterations
+- `tol` (float): Tolerance for convergence
+- `random_state` (int): Random seed for reproducibility
+
+## Methods
+
+- `fit(X)`: Train the model
+- `predict(X)`: Assign clusters to new data
+- `_initialize_centroids(X)`: Initialize cluster centers
+- `_compute_distances(X)`: Calculate point-to-centroid distances
+- `_update_centroids(X, labels)`: Update cluster centers
+
+## License
+
+This project is open source and available under the MIT License.
