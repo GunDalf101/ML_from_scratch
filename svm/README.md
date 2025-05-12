@@ -26,9 +26,8 @@ $$
 $$
 
 Subject to:
-$$
-y_i(w^T x_i + b) \geq 1 - \xi_i, \quad \xi_i \geq 0
-$$
+![Constraints](https://latex.codecogs.com/png.image?\dpi{110}&space;y_i(w^T&space;x_i&space;+&space;b)&space;\geq&space;1&space;-&space;\xi_i,\quad&space;\xi_i&space;\geq&space;0)
+
 
 Where:
 - $w$ is the weight vector
@@ -46,9 +45,8 @@ $$
 $$
 
 Subject to:
-$$
-0 \leq \alpha_i \leq C, \quad \sum_{i=1}^n \alpha_i y_i = 0
-$$
+![KKT Conditions](https://latex.codecogs.com/png.image?\dpi{110}&space;0\leq\alpha_i\leq&space;C,\quad&space;\sum_{i=1}^n\alpha_i&space;y_i=0)
+
 
 Where:
 - $\alpha_i$ are Lagrange multipliers
