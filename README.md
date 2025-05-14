@@ -25,7 +25,7 @@ This project is designed to help developers and students understand how popular 
 | Hierarchical Clustering      | Unsupervised (clustering)          | 📝 Planned  | [Hierarchical Clustering](./hierarchical_clustering) |
 | DBSCAN                       | Unsupervised (density clustering)  | 📝 Planned  | [DBSCAN](./dbscan) |
 | Autoencoder (basic)          | Unsupervised (NN)                  | 📝 Planned  | [Autoencoder](./autoencoder) |
-| AdaBoost                     | Ensemble (boosting)                | 📝 Planned  | [AdaBoost](./adaboost) |
+| AdaBoost                     | Ensemble (boosting)                | ✅ Done  | [AdaBoost](./adaboost) |
 | Gradient Boosting            | Ensemble (boosting)                | 📝 Planned  | [Gradient Boosting](./gradient_boosting) |
 | Recurrent Neural Network (RNN) | Supervised (sequential)          | 📝 Planned  | [RNN](./rnn) |
 | Long Short-Term Memory (LSTM) | Supervised (sequential)           | 📝 Planned  | [LSTM](./lstm) |
