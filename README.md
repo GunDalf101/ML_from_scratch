@@ -15,7 +15,7 @@ This project is designed to help developers and students understand how popular 
 | Decision Tree           | Supervised (classification)    | ✅ Done | [Decision Tree](./decision_tree) |
 | Random Forest           | Supervised (classification)    | ✅ Done | [Random Forest](./random_forest) |
 | Support Vector Machine  | Supervised (classification)    | ✅ Done | [SVM](./svm) |
-| Principal Component Analysis | Unsupervised (dim. reduction) | 📝 Planned | [PCA](./pca) |
+| Principal Component Analysis | Unsupervised (dim. reduction) | ✅ Done | [PCA](./pca) |
 | K-Means Clustering      | Unsupervised (clustering)      | ✅ Done| [K-Means](./kmeans) |
 | Single Layer Perceptron              | Supervised (NN binary)         | ✅ Done | [Perceptron](./perceptron) |
 | Neural Network (MLP)    | Supervised (NN multi-class)    | 📝 Planned | [Neural Network](./neural_network) |
