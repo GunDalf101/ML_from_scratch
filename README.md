@@ -18,7 +18,7 @@ This project is designed to help developers and students understand how popular 
 | Principal Component Analysis | Unsupervised (dim. reduction) | ✅ Done | [PCA](./pca) |
 | K-Means Clustering      | Unsupervised (clustering)      | ✅ Done| [K-Means](./kmeans) |
 | Single Layer Perceptron              | Supervised (NN binary)         | ✅ Done | [Perceptron](./perceptron) |
-| Neural Network (MLP)         | Supervised (NN multi-class)        | 📝 Planned  | [Neural Network](./neural_network) |
+| Neural Network (MLP)         | Supervised (NN multi-class)        | ✅ Done  | [Neural Network](./neural_network) |
 | L1 & L2 Regularization       | Optimization                       | 📝 Planned  | [Regularization](./regularization) |
 | Dropout                      | Regularization                     | 📝 Planned  | [Dropout](./dropout) |
 | Gradient Checking            | Debugging Tool                     | 📝 Planned  | [Gradient Checking](./gradient_checking) |
