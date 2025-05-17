@@ -70,7 +70,12 @@ jupyter notebook demo.ipynb
 
 ## 🤖 Demo Previews
 
-*Add some images/gifs of decision boundaries, PCA projections, etc.*
+![My Neural Network tested on Fashion MNIST dataset](images/0.png)
+![My PCA projecting a 3D swiss roll](images/1.png)
+![My PCA reducing visages to eigenvisages](images/2.png)
+![My Linear Regression](images/3.png)
+![My Random Forest tested on moons dataset](images/4.png)
+
 
 ## ✍️ Author
 
