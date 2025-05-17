@@ -70,11 +70,11 @@ jupyter notebook demo.ipynb
 
 ## 🤖 Demo Previews
 
-![My Neural Network tested on Fashion MNIST dataset](images/0.png)
-![My PCA projecting a 3D swiss roll](images/1.png)
-![My PCA reducing visages to eigenvisages](images/2.png)
-![My Linear Regression](images/3.png)
-![My Random Forest tested on moons dataset](images/4.png)
+![My Neural Network tested on Fashion MNIST dataset](demo/0.png)
+![My PCA projecting a 3D swiss roll](demo/1.png)
+![My PCA reducing visages to eigenvisages](demo/2.png)
+![My Linear Regression](demo/3.png)
+![My Random Forest tested on moons dataset](demo/4.png)
 
 
 ## ✍️ Author
